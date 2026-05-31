@@ -1,0 +1,61 @@
+enabled: true
+
+modules:
+  chat:
+    enabled: true
+  commands:
+    enabled: true
+    monitored-commands:
+      - "msg"
+      - "tell"
+      - "me"
+      - "w"
+      - "r"
+  signs:
+    enabled: true
+  books:
+    enabled: true
+  anvils:
+    enabled: true
+
+anti-spam:
+  enabled: true
+  cooldown-ms: 1000
+
+blocked-words:
+  - "badword1"
+  - "badword2"
+  - "fword"
+whitelisted-words:
+  - "assassin"
+  - "glass"
+
+punishments:
+  persistent-violations: true
+  thresholds:
+    15: "punish %player% chat-abuse"
+    20: "punish %player% chat-abuse"
+    30: "punish %player% chat-abuse"
+    40: "punish %player% chat-abuse"
+    50: "punish %player% chat-abuse"
+    60: "punish %player% chat-abuse"
+    70: "punish %player% chat-abuse"
+    80: "punish %player% chat-abuse"
+
+violation-sound:
+  enabled: true
+  name: "ENTITY_VILLAGER_NO"
+  volume: 1.0
+  pitch: 1.0
+
+messages:
+  prefix: ""
+  no-permission: "<red>You don't have permission to execute this command.</red>"
+  cooldown-warning: "<red>You must wait <white>%time%</white> more seconds before speaking again.</red>"
+  cooldown-actionbar: "<red>You must wait <white>%time%</white> more seconds before speaking again.</red>"
+  player-warning: "<red>Your message was blocked because it contained inappropriate language.</red>"
+  player-actionbar: "<red>Your message was blocked because it contained inappropriate language.</red>"
+  staff-alert: "<#0390fc>ᴀʟᴇʀᴛ &8» <white>%player%</white> <gray>triggered</gray> <#0390fc>%type%</#0390fc> <gray>filter. <dark_gray>(Word: <red>%word%</red>)</dark_gray><newline><dark_gray>» <gray>Context: <white>\"%message%\"</white>"
+  alerts-enabled: "<green>Real-time violation staff alerts have been enabled.</green>"
+  alerts-disabled: "<red>Real-time violation staff alerts have been disabled.</red>"
+  config-reloaded: "<green>Configuration reloaded successfully.</green>"

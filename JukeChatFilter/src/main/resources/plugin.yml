@@ -1,0 +1,20 @@
+name: JukeChatFilter
+version: '1.0'
+main: me.juke.jukeChatFilter.JukeChatFilter
+api-version: '1.21'
+authors: [ Juke ]
+description: Solution for chat filter. Made originaly for jUkESMP
+website: jukesmp.netlify.app
+commands:
+  jukechatfilter:
+    description: Control filters configurations operations.
+    aliases: [jcf]
+  chathistory:
+    description: History of bad chats
+permissions:
+  jukechatfilter.admin:
+    description: Administrative infrastructure settings control reload permissions.
+    default: op
+  jukechatfilter.alerts:
+    description: Access real-time filtration staff alerts broadcast parameters.
+    default: op
